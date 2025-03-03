@@ -13,13 +13,8 @@ export class UserController {
   constructor(private readonly userService: UserService) {}
 
   @Post()
-  @UsePipes(new ValidationPipe()) //Что-то типа мидлвары
+  @UsePipes(new ValidationPipe()) //Что-то типа мидлвары, которая валидирует запрос
   create(@Body() createUserDto: CreateUserDto) {
     return this.userService.create(createUserDto);
   }
-
-  //   @Get()
-  //   findOne() {
-  //     return this.userService.findOne();
-  //   }
 }
