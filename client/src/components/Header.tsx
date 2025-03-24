@@ -45,7 +45,7 @@ const Header: FC = () => {
                                     isActive ? "text-white" : "text-white/50"
                                 }
                             >
-                                Transaction
+                                Transactions
                             </NavLink>
                         </li>
                         <li>
@@ -65,7 +65,7 @@ const Header: FC = () => {
             {/* Actions */}
             {isAuth ? (
                 <button
-                    className="flex gap-2 items-center text-white py-2 px-4 rounded-md bg-rose-900 hover:bg-rose-800"
+                    className="flex gap-2 items-center text-white py-2 px-4 rounded-md bg-rose-900 hover:bg-rose-800 cursor-pointer"
                     onClick={logoutHandler}
                 >
                     <span>Log Out</span>

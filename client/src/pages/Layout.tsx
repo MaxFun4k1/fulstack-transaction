@@ -8,7 +8,7 @@ const Layout: FC = () => {
             <div>
                 <Header />
             </div>
-            <div className="container mx-auto w-1/2">
+            <div className="max-w-[1000px] mx-auto">
                 <Outlet />
             </div>
         </div>

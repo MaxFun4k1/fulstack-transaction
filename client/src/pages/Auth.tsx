@@ -67,20 +67,22 @@ const Auth: FC = () => {
                     onChange={(e) => setPassword(e.target.value)}
                 />
 
-                <button className="btn btn-green mx-auto">Submit</button>
+                <button className="btn btn-green mx-auto cursor-pointer">
+                    Submit
+                </button>
             </form>
 
             <div className="flex justify-center mt-5">
                 {isLogin ? (
                     <button
-                        className="text-slate-300 hover:text-white"
+                        className="text-slate-300 hover:text-white cursor-pointer"
                         onClick={() => setIsLogin(!isLogin)}
                     >
                         You don't have an account?
                     </button>
                 ) : (
                     <button
-                        className="text-slate-300 hover:text-white"
+                        className="text-slate-300 hover:text-white cursor-pointer"
                         onClick={() => setIsLogin(!isLogin)}
                     >
                         Already have an account?
