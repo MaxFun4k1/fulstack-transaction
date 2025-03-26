@@ -80,7 +80,7 @@ export const TransactionForm: FC = () => {
                         <input
                             type="radio"
                             name="type"
-                            value={"Expense"}
+                            value={"expense"}
                             className="form-radio text-blue-600"
                         />
                         <span>Expense</span>
